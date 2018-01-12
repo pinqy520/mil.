@@ -9,8 +9,14 @@ export async function fetchScreenShoot() {
   if (devices.length === 1) {
     const device = devices[0]
     const screencap = await client.screencap(device.id)
-    await sharp(screencap)
+
+    console.log('screencap done')
+    const pipeline = sharp()
       .resize(STD_SCREEN_WIDTH)
+
+    screencap.pipe(pipeline)
+
+    await pipeline
       .toFile(SCREEN_SAVE_PATH)
 
     await sharp(SCREEN_SAVE_PATH)

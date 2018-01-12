@@ -4,7 +4,8 @@
   "description": "冲顶大会、百万xx等辅助答题程序",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "once": "ts-node test.ts"
   },
   "author": "Qi Huang",
   "license": "MIT",

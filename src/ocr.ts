@@ -4,8 +4,11 @@ import { QUESTION_SAVE_PATH, OPTIONS_SAVE_PATH } from './const';
 
 
 export async function parseQuestionAndOptions() {
+  console.log('parse question')
   const rawQuestion = await ocr(QUESTION_SAVE_PATH)
+  console.log('parse rawOptions')
   const rawOptions = await ocr(OPTIONS_SAVE_PATH)
+  console.log('parse done')
 
   const question = rawQuestion.replace('\n', '').replace('\r', '').replace('\t', '').replace(' ', '')
   const options = rawOptions.split('\n').map(o => o.trim()).filter(o => o)
