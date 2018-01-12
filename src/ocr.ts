@@ -1,23 +1,36 @@
 import * as sharp from 'sharp'
-import * as Tesseract from 'tesseract.js'
-import { QUESTION_SAVE_PATH, OPTIONS_SAVE_PATH } from './const';
+import { QUESTION_SAVE_PATH, OPTIONS_SAVE_PATH } from './const'
+
+const tesseract = require('node-tesseract')
 
 
 export async function parseQuestionAndOptions() {
   console.log('parse question')
-  const rawQuestion = await ocr(QUESTION_SAVE_PATH)
+  const rawQuestion = await recognize(QUESTION_SAVE_PATH)
   console.log('parse rawOptions')
-  const rawOptions = await ocr(OPTIONS_SAVE_PATH)
+  const rawOptions = await recognize(OPTIONS_SAVE_PATH)
   console.log('parse done')
 
-  const question = rawQuestion.replace('\n', '').replace('\r', '').replace('\t', '').replace(' ', '')
+  const question = rawQuestion
   const options = rawOptions.split('\n').map(o => o.trim()).filter(o => o)
   return { question, options }
 }
 
-async function ocr(path: string) {
-  const buf = await sharp(path).grayscale().toBuffer()
-  const job = Tesseract.recognize(buf)
-  const result = await job
-  return result.text
+// async function ocr(path: string) {
+//   const buf = await sharp(path).grayscale().toBuffer()
+//   const job = Tesseract.recognize(buf, {
+//     lang: 'chi_sim'
+//   })
+//   job.progress(console.log)
+//   const result = await job
+//   return result.text
+// }
+
+function recognize(path: string) {
+  return new Promise<string>((resolve, reject) => {
+    tesseract.process(path, { l: 'chi_sim', oem: 2, psm: 12 }, (err: Error, text: string) => {
+      if (err) reject(err)
+      else resolve(text)
+    })
+  })
 }

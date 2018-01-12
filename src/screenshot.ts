@@ -1,5 +1,5 @@
 import * as sharp from 'sharp'
-import { STD_SCREEN_WIDTH, SCREEN_SAVE_PATH, QUESTION_SAVE_PATH, OPTIONS_SAVE_PATH } from './const';
+import { STD_SCREEN_WIDTH, SCREEN_SAVE_PATH, QUESTION_SAVE_PATH, OPTIONS_SAVE_PATH, QUESTION_AREA, OPTIONS_AREA } from './const';
 
 const adb = require('adbkit')
 const client = adb.createClient()
@@ -20,15 +20,13 @@ export async function fetchScreenShoot() {
       .toFile(SCREEN_SAVE_PATH)
 
     await sharp(SCREEN_SAVE_PATH)
-      .extract({
-        top: 350, left: 50, height: 210, width: 980
-      })
+      .extract(QUESTION_AREA)
+      .threshold(150)
       .toFile(QUESTION_SAVE_PATH)
 
     await sharp(SCREEN_SAVE_PATH)
-      .extract({
-        top: 535, left: 75, height: 465, width: 930
-      })
+      .extract(OPTIONS_AREA)
+      .threshold(150)
       .toFile(OPTIONS_SAVE_PATH)
   }
 }

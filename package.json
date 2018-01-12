@@ -16,6 +16,7 @@
     "@types/tesseract.js": "^0.0.2",
     "adbkit": "^2.11.0",
     "fs-extra": "^5.0.0",
+    "node-tesseract": "^0.2.7",
     "sharp": "^0.18.4",
     "tesseract.js": "^1.0.10",
     "ts-node": "^4.1.0",
