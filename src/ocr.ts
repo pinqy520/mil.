@@ -28,7 +28,7 @@ export async function parseQuestionAndOptions() {
 
 function recognize(path: string) {
   return new Promise<string>((resolve, reject) => {
-    tesseract.process(path, { l: 'chi_sim', oem: 2, psm: 12 }, (err: Error, text: string) => {
+    tesseract.process(path, { l: 'chi_sim' }, (err: Error, text: string) => {
       if (err) reject(err)
       else resolve(text)
     })

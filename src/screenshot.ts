@@ -21,12 +21,12 @@ export async function fetchScreenShoot() {
 
     await sharp(SCREEN_SAVE_PATH)
       .extract(QUESTION_AREA)
-      .threshold(150)
+      .threshold(140)
       .toFile(QUESTION_SAVE_PATH)
 
     await sharp(SCREEN_SAVE_PATH)
       .extract(OPTIONS_AREA)
-      .threshold(150)
+      .threshold(140)
       .toFile(OPTIONS_SAVE_PATH)
   }
 }

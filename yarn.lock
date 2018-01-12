@@ -8,6 +8,12 @@
   dependencies:
     "@types/node" "*"
 
+"@types/node-fetch@^1.6.7":
+  version "1.6.7"
+  resolved "http://registry.npm.taobao.org/@types/node-fetch/download/@types/node-fetch-1.6.7.tgz#521078e8f0c69a158e5022005aca92d2620f6d57"
+  dependencies:
+    "@types/node" "*"
+
 "@types/node@*", "@types/node@^9.3.0":
   version "9.3.0"
   resolved "http://registry.npm.taobao.org/@types/node/download/@types/node-9.3.0.tgz#3a129cda7c4e5df2409702626892cb4b96546dd5"
@@ -25,18 +31,6 @@
 "@types/strip-json-comments@0.0.30":
   version "0.0.30"
   resolved "http://registry.npm.taobao.org/@types/strip-json-comments/download/@types/strip-json-comments-0.0.30.tgz#9aa30c04db212a9a0649d6ae6fd50accc40748a1"
-
-"@types/tesseract.js@^0.0.2":
-  version "0.0.2"
-  resolved "http://registry.npm.taobao.org/@types/tesseract.js/download/@types/tesseract.js-0.0.2.tgz#d268f3f98242e2a9a33c3097b9ce73223bb95996"
-  dependencies:
-    "@types/node" "*"
-
-abstract-leveldown@~0.12.0:
-  version "0.12.4"
-  resolved "http://registry.npm.taobao.org/abstract-leveldown/download/abstract-leveldown-0.12.4.tgz#29e18e632e60e4e221d5810247852a63d7b2e410"
-  dependencies:
-    xtend "~3.0.0"
 
 adbkit-logcat@^1.1.0:
   version "1.1.0"
@@ -179,10 +173,6 @@ escape-string-regexp@^1.0.5:
   version "1.0.5"
   resolved "http://registry.npm.taobao.org/escape-string-regexp/download/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
 
-file-type@^3.8.0:
-  version "3.9.0"
-  resolved "http://registry.npm.taobao.org/file-type/download/file-type-3.9.0.tgz#257a078384d1db8087bc449d107d52a52672b9e9"
-
 fs-extra@^5.0.0:
   version "5.0.0"
   resolved "http://registry.npm.taobao.org/fs-extra/download/fs-extra-5.0.0.tgz#414d0110cdd06705734d055652c5411260c31abd"
@@ -235,10 +225,6 @@ iconv-lite@~0.4.13:
   version "0.4.19"
   resolved "http://registry.npm.taobao.org/iconv-lite/download/iconv-lite-0.4.19.tgz#f7468f60135f5e5dad3399c0a81be9a1603a082b"
 
-idb-wrapper@^1.5.0:
-  version "1.7.2"
-  resolved "http://registry.npm.taobao.org/idb-wrapper/download/idb-wrapper-1.7.2.tgz#8251afd5e77fe95568b1c16152eb44b396767ea2"
-
 inflight@^1.0.4:
   version "1.0.6"
   resolved "http://registry.npm.taobao.org/inflight/download/inflight-1.0.6.tgz#49bd6331d7d02d0c09bc910a1075ba8165b56df9"
@@ -266,14 +252,6 @@ is-stream@^1.0.1:
   version "1.1.0"
   resolved "http://registry.npm.taobao.org/is-stream/download/is-stream-1.1.0.tgz#12d4a3dd4e68e0b79ceb8dbc84173ae80d91ca44"
 
-is-url@^1.2.2:
-  version "1.2.2"
-  resolved "http://registry.npm.taobao.org/is-url/download/is-url-1.2.2.tgz#498905a593bf47cc2d9e7f738372bbf7696c7f26"
-
-isbuffer@~0.0.0:
-  version "0.0.0"
-  resolved "http://registry.npm.taobao.org/isbuffer/download/isbuffer-0.0.0.tgz#38c146d9df528b8bf9b0701c3d43cf12df3fc39b"
-
 isurl@^1.0.0-alpha5:
   version "1.0.0"
   resolved "http://registry.npm.taobao.org/isurl/download/isurl-1.0.0.tgz#b27f4f49f3cdaa3ea44a0a5b7f3462e6edc39d67"
@@ -281,30 +259,11 @@ isurl@^1.0.0-alpha5:
     has-to-string-tag-x "^1.2.0"
     is-object "^1.0.1"
 
-jpeg-js@^0.2.0:
-  version "0.2.0"
-  resolved "http://registry.npm.taobao.org/jpeg-js/download/jpeg-js-0.2.0.tgz#53e448ec9d263e683266467e9442d2c5a2ef5482"
-
 jsonfile@^4.0.0:
   version "4.0.0"
   resolved "http://registry.npm.taobao.org/jsonfile/download/jsonfile-4.0.0.tgz#8771aae0799b64076b76640fca058f9c10e33ecb"
   optionalDependencies:
     graceful-fs "^4.1.6"
-
-level-js@^2.2.4:
-  version "2.2.4"
-  resolved "http://registry.npm.taobao.org/level-js/download/level-js-2.2.4.tgz#bc055f4180635d4489b561c9486fa370e8c11697"
-  dependencies:
-    abstract-leveldown "~0.12.0"
-    idb-wrapper "^1.5.0"
-    isbuffer "~0.0.0"
-    ltgt "^2.1.2"
-    typedarray-to-buffer "~1.0.0"
-    xtend "~2.1.2"
-
-ltgt@^2.1.2:
-  version "2.2.0"
-  resolved "http://registry.npm.taobao.org/ltgt/download/ltgt-2.2.0.tgz#b65ba5fcb349a29924c8e333f7c6a5562f2e4842"
 
 make-error@^1.1.1:
   version "1.3.2"
@@ -354,7 +313,7 @@ nan@^2.6.2:
   version "2.8.0"
   resolved "http://registry.npm.taobao.org/nan/download/nan-2.8.0.tgz#ed715f3fe9de02b57a5e6252d90a96675e1f085a"
 
-node-fetch@^1.6.3:
+node-fetch@^1.7.3:
   version "1.7.3"
   resolved "http://registry.npm.taobao.org/node-fetch/download/node-fetch-1.7.3.tgz#980f6f72d85211a5347c6b2bc18c5b84c3eb47ef"
   dependencies:
@@ -383,14 +342,6 @@ npm-conf@^1.1.0:
     config-chain "^1.1.11"
     pify "^3.0.0"
 
-object-assign@^4.1.0:
-  version "4.1.1"
-  resolved "http://registry.npm.taobao.org/object-assign/download/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
-
-object-keys@~0.4.0:
-  version "0.4.0"
-  resolved "http://registry.npm.taobao.org/object-keys/download/object-keys-0.4.0.tgz#28a6aae7428dd2c3a92f3d95f21335dd204e0336"
-
 once@^1.3.0, once@^1.3.1:
   version "1.4.0"
   resolved "http://registry.npm.taobao.org/once/download/once-1.4.0.tgz#583b1aa775961d4b113ac17d9c50baef9dd76bd1"
@@ -408,10 +359,6 @@ path-is-absolute@^1.0.0:
 pify@^3.0.0:
   version "3.0.0"
   resolved "http://registry.npm.taobao.org/pify/download/pify-3.0.0.tgz#e5a4acd2c101fdf3d9a4d07f0dbc4db49dd28176"
-
-png.js@^0.2.1:
-  version "0.2.1"
-  resolved "http://registry.npm.taobao.org/png.js/download/png.js-0.2.1.tgz#da6b83c134bdc101940d9ab1c98e9154affbb1f2"
 
 proto-list@~1.2.1:
   version "1.2.4"
@@ -495,23 +442,6 @@ tar@^3.1.5:
     mkdirp "^0.5.0"
     yallist "^3.0.2"
 
-tesseract.js-core@^1.0.2:
-  version "1.0.2"
-  resolved "http://registry.npm.taobao.org/tesseract.js-core/download/tesseract.js-core-1.0.2.tgz#1ce33a29dc812357b8356a30ededf8b188043b37"
-
-tesseract.js@^1.0.10:
-  version "1.0.10"
-  resolved "http://registry.npm.taobao.org/tesseract.js/download/tesseract.js-1.0.10.tgz#e11a96ae76147939d9218f88e287fb69414b1e5d"
-  dependencies:
-    file-type "^3.8.0"
-    is-url "^1.2.2"
-    jpeg-js "^0.2.0"
-    level-js "^2.2.4"
-    node-fetch "^1.6.3"
-    object-assign "^4.1.0"
-    png.js "^0.2.1"
-    tesseract.js-core "^1.0.2"
-
 through@2:
   version "2.3.8"
   resolved "http://registry.npm.taobao.org/through/download/through-2.3.8.tgz#0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5"
@@ -546,10 +476,6 @@ tunnel-agent@^0.6.0:
   dependencies:
     safe-buffer "^5.0.1"
 
-typedarray-to-buffer@~1.0.0:
-  version "1.0.4"
-  resolved "http://registry.npm.taobao.org/typedarray-to-buffer/download/typedarray-to-buffer-1.0.4.tgz#9bb8ba0e841fb3f4cf1fe7c245e9f3fa8a5fe99c"
-
 typescript@^2.6.2:
   version "2.6.2"
   resolved "http://registry.npm.taobao.org/typescript/download/typescript-2.6.2.tgz#3c5b6fd7f6de0914269027f03c0946758f7673a4"
@@ -571,16 +497,6 @@ v8flags@^3.0.0:
 wrappy@1:
   version "1.0.2"
   resolved "http://registry.npm.taobao.org/wrappy/download/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
-
-xtend@~2.1.2:
-  version "2.1.2"
-  resolved "http://registry.npm.taobao.org/xtend/download/xtend-2.1.2.tgz#6efecc2a4dad8e6962c4901b337ce7ba87b5d28b"
-  dependencies:
-    object-keys "~0.4.0"
-
-xtend@~3.0.0:
-  version "3.0.0"
-  resolved "http://registry.npm.taobao.org/xtend/download/xtend-3.0.0.tgz#5cce7407baf642cba7becda568111c493f59665a"
 
 yallist@^3.0.0, yallist@^3.0.2:
   version "3.0.2"
