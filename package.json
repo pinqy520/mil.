@@ -13,12 +13,10 @@
     "@types/fs-extra": "^5.0.0",
     "@types/node": "^9.3.0",
     "@types/sharp": "^0.17.6",
-    "@types/tesseract.js": "^0.0.2",
     "adbkit": "^2.11.0",
     "fs-extra": "^5.0.0",
     "node-tesseract": "^0.2.7",
     "sharp": "^0.18.4",
-    "tesseract.js": "^1.0.10",
     "ts-node": "^4.1.0",
     "typescript": "^2.6.2"
   }
