@@ -22,3 +22,5 @@ $ yarn
 ```
 $ yarn once
 ```
+
+![image](https://user-images.githubusercontent.com/5719833/34867573-960323d8-f7bb-11e7-823e-85dc5b13fffa.png)
