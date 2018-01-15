@@ -2,9 +2,10 @@ import fetch from 'node-fetch'
 
 
 export async function fetchResultBySearchResults(question: string, options: string[]) {
+  const promises = options.map(o => fetchSearchResultCount(question + ' ' + o))
+  const results = await Promise.all(promises)
   for (let i = 0; i < options.length; i++) {
-    const o = options[i]
-    console.log(o, '结果', await fetchSearchResultCount(question + ' ' + o))
+    console.log(options[i], '结果', results[i])
   }
 }
 

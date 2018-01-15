@@ -10,6 +10,8 @@ export const SCALE = 0.9
 
 export const STD_SCREEN_WIDTH = Math.round(1080 * SCALE)
 
+// 冲顶大会
+
 export const QUESTION_AREA = {
   top: Math.round(350 * SCALE),
   left: Math.round(50 * SCALE),
@@ -23,3 +25,19 @@ export const OPTIONS_AREA = {
   height: Math.round(450 * SCALE),
   width: Math.round(700 * SCALE),
 }
+
+// 芝士超人
+
+// export const QUESTION_AREA = {
+//   top: Math.round(330 * SCALE),
+//   left: Math.round(50 * SCALE),
+//   height: Math.round(190 * SCALE),
+//   width: Math.round(980 * SCALE)
+// }
+
+// export const OPTIONS_AREA = {
+//   top: Math.round(550 * SCALE),
+//   left: Math.round(75 * SCALE),
+//   height: Math.round(500 * SCALE),
+//   width: Math.round(700 * SCALE),
+// }
