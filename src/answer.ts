@@ -7,6 +7,7 @@ export async function fetchResultBySearchResults(question: string, options: stri
   for (let i = 0; i < options.length; i++) {
     console.log(options[i], '结果', results[i])
   }
+  console.log('---------------------------')
 }
 
 

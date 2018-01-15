@@ -1,6 +1,6 @@
 # Mil.
 
-> typescript版冲顶大会、百万xx等辅助答题程序（还在开发中，预计今晚搞定吧）
+> typescript版冲顶大会、百万xx等辅助答题程序（完善中）
 
 
 1. 安装tesseract以及语言包
